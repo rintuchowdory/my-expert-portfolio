@@ -89,7 +89,7 @@ export function Projects() {
             >
               <CardHeader className="p-0 relative h-64 overflow-hidden">
                 <Image
-                  src={project.image || "https://placehold.co/600x400"}
+                  src={project.image || "https://picsum.photos/seed/project/800/600"}
                   alt={project.title}
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-110"

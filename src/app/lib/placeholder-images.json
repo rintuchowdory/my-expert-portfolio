@@ -8,7 +8,7 @@
     },
     {
       "id": "profile-pic",
-      "description": "Professional headshot",
+      "description": "Professional headshot of Rintu Chowdory",
       "imageUrl": "https://picsum.photos/seed/dev-portrait/400/400",
       "imageHint": "professional person portrait"
     },
