@@ -1,4 +1,3 @@
-
 "use client";
 
 import Link from "next/link";
@@ -28,9 +27,7 @@ export function Footer() {
               <Linkedin className="w-5 h-5" />
             </a>
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-              <Twitter className="text-muted-foreground hover:text-primary transition-colors">
-                <Twitter className="w-5 h-5" />
-              </Twitter>
+              <Twitter className="w-5 h-5" />
             </a>
           </div>
 

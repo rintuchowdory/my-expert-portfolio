@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from "next/image";
@@ -77,8 +76,8 @@ export function Projects() {
               ranging from AI-driven tools to financial integrations.
             </p>
           </div>
-          <Button variant="outline" size="lg" className="glass-card">
-            View GitHub Profile
+          <Button variant="outline" size="lg" className="glass-card" asChild>
+            <a href="https://github.com/Rintu-chowdory" target="_blank">View GitHub Profile</a>
           </Button>
         </div>
 

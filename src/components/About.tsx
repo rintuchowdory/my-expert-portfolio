@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from "next/image";
@@ -11,7 +10,7 @@ export function About() {
   const stats = [
     { label: "Years Experience", value: "6+" },
     { label: "Projects Completed", value: "50+" },
-    { label: "Open Source Contrib", value: "100+" },
+    { label: "Github Repos", value: "30+" },
   ];
 
   return (
@@ -68,7 +67,7 @@ export function About() {
               </div>
               <div className="flex items-center gap-3">
                 <CheckCircle2 className="w-5 h-5 text-secondary" />
-                <span className="font-medium">Cross-Platform Mobile Development</span>
+                <span className="font-medium">Cross-Platform Mobile Development (Flutter/Dart)</span>
               </div>
             </div>
           </div>
