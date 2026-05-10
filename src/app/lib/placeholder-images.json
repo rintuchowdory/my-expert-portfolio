@@ -1,0 +1,35 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "hero-bg",
+      "description": "Abstract technological background",
+      "imageUrl": "https://picsum.photos/seed/tech1/1920/1080",
+      "imageHint": "abstract technology"
+    },
+    {
+      "id": "profile-pic",
+      "description": "Professional headshot",
+      "imageUrl": "https://picsum.photos/seed/dev-portrait/400/400",
+      "imageHint": "professional person portrait"
+    },
+    {
+      "id": "project-1",
+      "description": "E-commerce platform screenshot",
+      "imageUrl": "https://picsum.photos/seed/ecommerce/800/600",
+      "imageHint": "website dashboard"
+    },
+    {
+      "id": "project-2",
+      "description": "AI Dashboard interface",
+      "imageUrl": "https://picsum.photos/seed/ai-dashboard/800/600",
+      "imageHint": "data visualization"
+    },
+    {
+      "id": "project-3",
+      "description": "Mobile app mockup",
+      "imageUrl": "https://picsum.photos/seed/mobile-app/800/600",
+      "imageHint": "mobile application"
+    }
+  ]
+}
