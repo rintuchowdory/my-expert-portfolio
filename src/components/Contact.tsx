@@ -15,7 +15,6 @@ export function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    // Simulate API call
     setTimeout(() => {
       setLoading(false);
       toast({
@@ -34,9 +33,8 @@ export function Contact() {
             <div className="space-y-4">
               <h2 className="text-4xl font-bold font-headline">Let's Connect</h2>
               <p className="text-muted-foreground text-lg max-w-md">
-                Have a project in mind or just want to chat about tech? 
-                Feel free to drop a message. I'm always open to new opportunities 
-                and collaborations.
+                Looking for a technical partner or have a question about my projects? 
+                I'm currently available for interesting collaborations and senior roles.
               </p>
             </div>
 
@@ -47,7 +45,7 @@ export function Contact() {
                 </div>
                 <div>
                   <div className="text-sm text-muted-foreground">Email</div>
-                  <div className="font-bold">hello@profolio-connect.dev</div>
+                  <div className="font-bold">Rintuchowdory@outlook.de</div>
                 </div>
               </div>
 
@@ -57,7 +55,7 @@ export function Contact() {
                 </div>
                 <div>
                   <div className="text-sm text-muted-foreground">Location</div>
-                  <div className="font-bold">San Francisco, CA</div>
+                  <div className="font-bold">52499 Baesweiler, Germany</div>
                 </div>
               </div>
 
@@ -67,7 +65,7 @@ export function Contact() {
                 </div>
                 <div>
                   <div className="text-sm text-muted-foreground">Phone</div>
-                  <div className="font-bold">+1 (555) 000-0000</div>
+                  <div className="font-bold">+49 176 82029425</div>
                 </div>
               </div>
             </div>
@@ -97,7 +95,7 @@ export function Contact() {
                  <Label htmlFor="message">Message</Label>
                  <Textarea 
                    id="message" 
-                   placeholder="Tell me more about your project..." 
+                   placeholder="How can I help you today?" 
                    required 
                    className="min-h-[150px] bg-background/50 border-white/10"
                  />

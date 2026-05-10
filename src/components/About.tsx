@@ -3,16 +3,15 @@
 
 import Image from "next/image";
 import { PlaceHolderImages } from "@/app/lib/placeholder-images";
-import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle2 } from "lucide-react";
 
 export function About() {
   const profilePic = PlaceHolderImages.find(img => img.id === 'profile-pic');
 
   const stats = [
-    { label: "Years Experience", value: "5+" },
-    { label: "Projects Completed", value: "40+" },
-    { label: "Satisfied Clients", value: "25+" },
+    { label: "Years Experience", value: "6+" },
+    { label: "Projects Completed", value: "50+" },
+    { label: "Open Source Contrib", value: "100+" },
   ];
 
   return (
@@ -24,7 +23,7 @@ export function About() {
             <div className="relative rounded-2xl overflow-hidden border border-white/10 aspect-square">
               <Image
                 src={profilePic?.imageUrl || "https://picsum.photos/seed/profile/600/600"}
-                alt="Profile picture"
+                alt="Rintu Chowdory"
                 fill
                 className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
                 data-ai-hint="professional person portrait"
@@ -36,14 +35,14 @@ export function About() {
             <div className="space-y-4">
               <h2 className="text-4xl font-bold font-headline">About Me</h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I am a passionate Software Engineer with a focus on creating meaningful digital experiences. 
-                My journey in tech began with a curiosity about how things work on the internet, 
-                which evolved into a career dedicated to building robust and user-centric applications.
+                I am Rintu Chowdory, a Senior Software Engineer based in Baesweiler, Germany. 
+                With a deep focus on building scalable web ecosystems and AI-powered tools, 
+                I specialize in turning complex requirements into elegant, high-performance solutions.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I thrive in collaborative environments and enjoy solving complex problems using modern technologies 
-                like React, Next.js, and TypeScript. My goal is always to deliver code that is as clean as the 
-                interfaces it powers.
+                My work spans across TypeScript, Python, and Dart, with a heavy emphasis on 
+                developer experience and open-source contribution. I believe in software 
+                that doesn't just work, but empowers the people who use it.
               </p>
             </div>
 
@@ -61,15 +60,15 @@ export function About() {
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <CheckCircle2 className="w-5 h-5 text-secondary" />
-                <span className="font-medium">User Experience Design Thinking</span>
+                <span className="font-medium">AI & Generative LLM Integration</span>
               </div>
               <div className="flex items-center gap-3">
                 <CheckCircle2 className="w-5 h-5 text-secondary" />
-                <span className="font-medium">Agile Methodology & Team Leadership</span>
+                <span className="font-medium">Full-Stack Architecture (Node, Python, Go)</span>
               </div>
               <div className="flex items-center gap-3">
                 <CheckCircle2 className="w-5 h-5 text-secondary" />
-                <span className="font-medium">Advanced Performance Optimization</span>
+                <span className="font-medium">Cross-Platform Mobile Development</span>
               </div>
             </div>
           </div>

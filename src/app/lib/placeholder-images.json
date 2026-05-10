@@ -15,21 +15,39 @@
     },
     {
       "id": "project-1",
-      "description": "E-commerce platform screenshot",
-      "imageUrl": "https://picsum.photos/seed/ecommerce/800/600",
-      "imageHint": "website dashboard"
+      "description": "AntragGPT Interface",
+      "imageUrl": "https://picsum.photos/seed/antraggpt/800/600",
+      "imageHint": "ai dashboard"
     },
     {
       "id": "project-2",
-      "description": "AI Dashboard interface",
-      "imageUrl": "https://picsum.photos/seed/ai-dashboard/800/600",
-      "imageHint": "data visualization"
+      "description": "Islamic Hub Platform",
+      "imageUrl": "https://picsum.photos/seed/islamic/800/600",
+      "imageHint": "community portal"
     },
     {
       "id": "project-3",
-      "description": "Mobile app mockup",
-      "imageUrl": "https://picsum.photos/seed/mobile-app/800/600",
-      "imageHint": "mobile application"
+      "description": "Schufa Open Platform",
+      "imageUrl": "https://picsum.photos/seed/schufa/800/600",
+      "imageHint": "data visualization"
+    },
+    {
+      "id": "project-4",
+      "description": "Aura AI Assistant",
+      "imageUrl": "https://picsum.photos/seed/aura/800/600",
+      "imageHint": "chat interface"
+    },
+    {
+      "id": "project-5",
+      "description": "Tesla Chatbot Experience",
+      "imageUrl": "https://picsum.photos/seed/tesla/800/600",
+      "imageHint": "automotive technology"
+    },
+    {
+      "id": "project-6",
+      "description": "Luftlinie Mapping Tool",
+      "imageUrl": "https://picsum.photos/seed/mapping/800/600",
+      "imageHint": "map application"
     }
   ]
 }

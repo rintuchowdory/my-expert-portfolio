@@ -12,30 +12,57 @@ export function Projects() {
   const projects = [
     {
       id: "project-1",
-      title: "E-Commerce Alpha",
-      description: "A full-stack e-commerce solution featuring real-time inventory and high-speed payments integration.",
-      tags: ["Next.js", "Stripe", "Prisma"],
+      title: "AntragGPT",
+      description: "AI-powered application platform that simplifies complex document processing and submission using advanced LLMs.",
+      tags: ["TypeScript", "AI", "OpenAI"],
       link: "#",
-      repo: "#",
+      repo: "https://github.com/Rintu-chowdory/antraggpt",
       image: PlaceHolderImages.find(img => img.id === 'project-1')?.imageUrl
     },
     {
       id: "project-2",
-      title: "AI Narrative Engine",
-      description: "Intelligent content generator using Gemini Pro to help developers document their workflows.",
-      tags: ["AI", "GenKit", "TypeScript"],
+      title: "Islamic Hub",
+      description: "A comprehensive digital ecosystem for Islamic resources, providing community tools and educational content.",
+      tags: ["TypeScript", "Firebase", "React"],
       link: "#",
-      repo: "#",
+      repo: "https://github.com/Rintu-chowdory/islamic-hub",
       image: PlaceHolderImages.find(img => img.id === 'project-2')?.imageUrl
     },
     {
       id: "project-3",
-      title: "Fintech Dashboard",
-      description: "Comprehensive financial tracking mobile-first application with interactive charts and budget alerts.",
-      tags: ["React Native", "D3.js", "Firebase"],
+      title: "Schufa Open Platform",
+      description: "An innovative open-platform integration for credit scoring insights and financial transparency.",
+      tags: ["TypeScript", "API", "Finance"],
       link: "#",
-      repo: "#",
+      repo: "https://github.com/Rintu-chowdory/schufa-open-platform",
       image: PlaceHolderImages.find(img => img.id === 'project-3')?.imageUrl
+    },
+    {
+      id: "project-4",
+      title: "Aura AI",
+      description: "A sophisticated AI assistant template designed for seamless user interaction and intelligent automation.",
+      tags: ["JavaScript", "LLM", "Template"],
+      link: "#",
+      repo: "https://github.com/Rintu-chowdory/Aura-AI",
+      image: PlaceHolderImages.find(img => img.id === 'project-4')?.imageUrl
+    },
+    {
+      id: "project-5",
+      title: "Tesla Chatbot",
+      description: "A Python-based intelligent conversational agent tailored for automotive customer experience simulations.",
+      tags: ["Python", "NLP", "Tesla API"],
+      link: "#",
+      repo: "https://github.com/Rintu-chowdory/tesla-chatbot",
+      image: PlaceHolderImages.find(img => img.id === 'project-5')?.imageUrl
+    },
+    {
+      id: "project-6",
+      title: "Luftlinie",
+      description: "A precise distance calculation tool optimized for web performance and spatial mapping.",
+      tags: ["CSS", "JavaScript", "Maps"],
+      link: "#",
+      repo: "https://github.com/Rintu-chowdory/luftlinie",
+      image: PlaceHolderImages.find(img => img.id === 'project-6')?.imageUrl
     }
   ];
 
@@ -46,12 +73,12 @@ export function Projects() {
           <div className="max-w-2xl space-y-4">
             <h2 className="text-4xl font-bold font-headline tracking-tight">Featured Projects</h2>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              Explore a curated selection of my most challenging and impactful work, 
-              ranging from complex enterprise platforms to creative experiments.
+              A collection of high-impact open-source contributions and personal projects, 
+              ranging from AI-driven tools to financial integrations.
             </p>
           </div>
           <Button variant="outline" size="lg" className="glass-card">
-            View All Projects
+            View GitHub Profile
           </Button>
         </div>
 
@@ -98,8 +125,8 @@ export function Projects() {
                 </p>
               </CardContent>
               <CardFooter className="px-6 pb-6 pt-0">
-                <Link href="#" className="text-sm font-bold text-primary flex items-center gap-1 hover:underline">
-                  Case Study <ArrowRight className="w-3 h-3" />
+                <Link href={project.repo} target="_blank" className="text-sm font-bold text-primary flex items-center gap-1 hover:underline">
+                  View Repository <ArrowRight className="w-3 h-3" />
                 </Link>
               </CardFooter>
             </Card>
