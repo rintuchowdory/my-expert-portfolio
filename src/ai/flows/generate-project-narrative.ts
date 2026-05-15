@@ -7,8 +7,8 @@
  * - GenerateProjectNarrativeOutput - The return type for the generateProjectNarrative function.
  */
 
-import {ai} from '@/ai/genkit';
-import {z} from 'genkit';
+import { ai } from '@/ai/genkit';
+import { z } from 'genkit';
 
 const GenerateProjectNarrativeInputSchema = z.object({
   projectName: z.string().describe('The name of the project.'),
@@ -23,14 +23,15 @@ const GenerateProjectNarrativeInputSchema = z.object({
   audience: z
     .string()
     .describe(
-      'The target audience for the narrative (e.g., recruiters, fellow developers, potential clients).' Ку
+      'The target audience for the narrative (e.g., recruiters, fellow developers, potential clients).'
     ),
   style: z
     .string()
     .describe(
-      'The desired narrative style (e.g., professional, creative, concise, technical).' Ку
+      'The desired narrative style (e.g., professional, creative, concise, technical).'
     ),
 });
+
 export type GenerateProjectNarrativeInput = z.infer<
   typeof GenerateProjectNarrativeInputSchema
 >;
@@ -38,6 +39,7 @@ export type GenerateProjectNarrativeInput = z.infer<
 const GenerateProjectNarrativeOutputSchema = z
   .string()
   .describe('The generated project narrative.');
+
 export type GenerateProjectNarrativeOutput = z.infer<
   typeof GenerateProjectNarrativeOutputSchema
 >;
@@ -50,8 +52,8 @@ export async function generateProjectNarrative(
 
 const prompt = ai.definePrompt({
   name: 'generateProjectNarrativePrompt',
-  input: {schema: GenerateProjectNarrativeInputSchema},
-  output: {schema: GenerateProjectNarrativeOutputSchema},
+  input: { schema: GenerateProjectNarrativeInputSchema },
+  output: { schema: GenerateProjectNarrativeOutputSchema },
   prompt: `You are an expert copywriter specializing in crafting compelling project narratives for professional portfolios. Your task is to generate a project description tailored to a specific audience and style, using the provided project details.
 
 Project Name: "{{{projectName}}}"
@@ -74,8 +76,8 @@ const generateProjectNarrativeFlow = ai.defineFlow(
     inputSchema: GenerateProjectNarrativeInputSchema,
     outputSchema: GenerateProjectNarrativeOutputSchema,
   },
-  async input => {
-    const {output} = await prompt(input);
+  async (input) => {
+    const { output } = await prompt(input);
     return output!;
   }
 );
