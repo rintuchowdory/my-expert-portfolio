@@ -27,13 +27,16 @@ jobs:
           node-version: "20"
           cache: 'npm'
           
+      - name: Clear npm cache
+        run: npm cache clean --force
+          
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
           static_site_generator: next
           
       - name: Install dependencies
-        run: npm ci
+        run: npm ci --verbose
         
       - name: Build with Next.js
         run: npm run build
